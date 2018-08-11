@@ -1,0 +1,75 @@
+.btn-primary {
+	margin-right: 10px;
+	background-color: rgba(238,64,54,0.7);
+	border-color: rgba(238,64,54,0.1);
+	color: white;
+	font-family: Avenir;
+	font-size: 14px;
+}
+.btn-primarySubmit {
+ 	margin-right: 20px;
+ 	background-color: rgba(238,64,54,0.8);
+	border-color: rgba(238,64,54,0.1);
+	color: white;
+	font-family: Avenir;
+	font-size: 20px;
+}
+
+.mt-4, .my-4 {
+    margin-left: 10px;
+}
+
+.button-menu {
+	margin-left: 0px;
+	float: right;
+}
+
+img {
+	width: 18em;
+	float:left;
+	margin-left: 15px;
+}
+
+.food-thumbnails {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    float:right;
+}
+
+.menuSelection.mb-4 {
+	float: right;
+	width: 55%;
+	margin-right: 20px;
+}
+
+.slick-next:before, .slick-prev:before {
+	font-size: 0px;
+	line-height: 1;
+	opacity: .75;
+	color: #fff;
+}
+
+.total {
+	color: white;
+	font-size: 50px;
+	font-family: Avenir;
+	opacity: 0.8;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.btn-margin {
+	margin-right: 10px;
+	background-color: rgba(222,222,222,0.1);
+	border-color: rgba(238,64,54,0.8);
+	color: white;
+	font-family: Avenir;
+	font-size: 14px;
+}
+
+h4 {
+	color: white;
+	font-family: Avenir;
+	margin-top: 200px;
+	font-size: 35px;
+}

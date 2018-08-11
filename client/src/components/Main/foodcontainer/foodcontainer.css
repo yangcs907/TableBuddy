@@ -1,0 +1,51 @@
+div.left.foodcontainer {
+	margin: 10px;
+	float: left;
+	max-height: 295px;
+	max-height: 295px;
+	border-radius: 8px;
+}
+
+.food-description {
+	float: right;
+	width: 15rem;
+}
+
+.card {
+	width: 20rem;
+	background-color: rgba(211, 211, 211, 0.1);
+	color: white;
+	size:25px;
+	border-radius: 4px;
+}
+
+.card-body {
+	margin-left: 10px;
+}
+
+.card-title {
+	font-size: 22px;
+	color: white;
+	font-family: Avenir;
+}
+
+.card-textDesc {
+	font-size: 16px;
+	color: white;
+	font-family: Avenir;
+}
+
+.card-textPrice {
+	font-size: 21px;
+	color: white;
+	font-family: Avenir;
+}
+
+.btn-primaryAdd {
+	margin-right: 10px;
+	background-color: rgba(238,64,54,0.8);
+	border-color: rgba(238,64,54,0.1);
+	color: white;
+	font-family: Avenir;
+	font-size: 14px;
+}
