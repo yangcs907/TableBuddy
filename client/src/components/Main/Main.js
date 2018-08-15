@@ -61,7 +61,6 @@ class Main extends Component {
     let addedItem = { ...this.state.currentSelection, _id: +new Date() };
     let newOrderItems = [...this.state.orderItems, addedItem];
 
-    // do we want to remove current selection when added to order?
     // this.setDefaultCurrent();
 
     this.setState({ orderItems: newOrderItems });
@@ -113,7 +112,7 @@ class Main extends Component {
       <React.Fragment>
       <div className="logo">
         <div className="logoContainer">
-          <h1><i class="fas fa-utensils"></i>&nbsp;Order Buddy</h1>
+          <h1><i class="fas fa-utensils"></i>&nbsp;Table Buddy</h1>
         </div>
       </div>
       <div className="by">
