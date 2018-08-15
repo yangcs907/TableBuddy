@@ -6,6 +6,7 @@ import Order from "./order";
 import Chooser from "./chooser";
 import SuccessModal from "./successmodal";
 import "./Main.css";
+import Footer from "../Footer";
 
 class Main extends Component {
   state = {
@@ -110,32 +111,40 @@ class Main extends Component {
     const total = Math.round(this.state.orderItems.reduce((t, i) => t + i.price, 0) * 100) / 100;
     return (
       <React.Fragment>
-      <img src="Order-Up-w-text.png" alt="Order Up logo" />
-      <div className="menuSelection mb-4">
+      <div className="logo">
+        <div className="logoContainer">
+          <h1><i class="fas fa-utensils"></i>&nbsp;Order Buddy</h1>
+        </div>
+      </div>
+      <div className="by">
+        <p>by <a href="https://chrisyangportfolio.herokuapp.com/">cy</a></p>
+      </div>
+      <div className="menuSelection">
       <Chooser menuOptions={this.state.menuOptions} setCurrent={this.setCurrent} />
       </div>
-      <div className="orderArea w-100 d-flex justify-content-between">
+
 
       {this.state.currentSelection ?
       <Foodcontainer {...this.state.currentSelection} addToOrder={this.addCurrentToOrder} /> :
       null }
+      <div className="totalArea">
 
-      <Order orderItems={this.state.orderItems} removeOrder={this.removeFromOrder} />
-      </div>
-      <div className="totalArea d-flex justify-content-between">
-      <div className="total">
-        Total: {total}
-      </div>
-      <div className="mt-4">
-        <button className="btn btn-primarySubmit" onClick={this.submitOrder}>Submit Order</button>
+        <h2>Total: {total}</h2>
+      <div className="submitButton">
+        <button onClick={this.submitOrder}>Submit Order</button>
       </div>
       </div>
+        <Order orderItems={this.state.orderItems} removeOrder={this.removeFromOrder} />
+        <div className="footerContainer">
+        </div>
+
       {
         this.state.currentlyOrdering ?
         null :
         <SuccessModal hideModal={this.startNewOrder} />
       }
-      </React.Fragment>
+    </React.Fragment>
+
     );
   }
 }

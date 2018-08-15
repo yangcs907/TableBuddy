@@ -89,7 +89,7 @@ class Manager extends Component {
                         <React.Fragment>
                             <h1 className="sr-only">Manage</h1>
                             <div className="container mt-5 mb-5">
-                            <div className="card w-100">
+                            <div className="cardContainer">
                               <div className="card-body">
                               <Tabs>
                                   <Tab class ="tabs" label="Open Orders">

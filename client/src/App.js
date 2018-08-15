@@ -27,6 +27,7 @@ import About from './components/About';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
+import Footer from "./components/Footer";
 
 const auth = new Auth();
 
@@ -36,8 +37,15 @@ const handleAuthentication = ({location}) => {
   }
 }
 
+const container = {
+  height: "100%",
+  maxHeight: "100%"
+}
+
+
 export const makeMainRoutes = () => {
   return (
+    <div style={container}>
       <Router history={history}>
         <div>
           <Route path="/" render={(props) => <AppLogin auth={auth} {...props} />} />
@@ -47,9 +55,11 @@ export const makeMainRoutes = () => {
           <Redirect from="/" to="/about" />
           <Route path="/callback" render={(props) => {
             handleAuthentication(props);
-            return <Callback {...props} /> 
+            return <Callback {...props} />
           }}/>
+
         </div>
       </Router>
+    </div>
   );
 }

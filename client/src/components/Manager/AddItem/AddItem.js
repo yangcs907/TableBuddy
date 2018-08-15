@@ -1,5 +1,16 @@
 import React, { Component } from "react";
 
+const submitMenuItem = {
+  color: "rgb(238,232,170)",
+  borderStyle: "none",
+  backgroundColor: "rgba(0,0,0,0)",
+  cursor: "pointer",
+  fontSize: "24px"
+}
+
+const addItemForm = {
+  fontFamily: "Didact Gothic, sans-serif"
+}
 class AddItem extends Component {
   state = {
     category: "",
@@ -38,8 +49,8 @@ class AddItem extends Component {
 
   render() {
     return (
-      <div className="px-5">
-      <h1 className="mt-4 mb-4">Add an item to the menu</h1>
+      <div className="px-5" style={addItemForm}>
+      <h1 className="mt-4 mb-4" style={addItemForm}>Add an item to the menu</h1>
 
       <form className="form">
 
@@ -114,7 +125,7 @@ class AddItem extends Component {
       placeholder="Image"
       />
       </div>
-      <button className="btn btn-primary" onClick={this.handleFormSubmit}>Submit</button>
+      <button style={submitMenuItem} onClick={this.handleFormSubmit}>Submit</button>
       </form>
       </div>
       );

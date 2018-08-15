@@ -14,7 +14,7 @@ class Chooser extends Component {
 
   renderCategoryButton = category => (
     <button
-    className="btn btn-primary"
+    className="menuButton"
     onClick={() => this.switchCategory(category)}
     key={category}
     >
