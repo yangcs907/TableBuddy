@@ -46,28 +46,7 @@ class App extends Component {
             >
               Manager
             </a>
-            {
-              !isAuthenticated() && (
-                  <a
-                    id="qsLoginBtn"
-                    style={navButton}
-                    onClick={this.login.bind(this)}
-                  >
-                    Log In
-                  </a>
-                )
-            }
-            {
-              isAuthenticated() && (
-                  <a
-                    id="qsLogoutBtn"
-                    style={navButton}
-                    onClick={this.logout.bind(this)}
-                  >
-                    Log Out
-                  </a>
-                )
-            }
+            
       </div>
     );
   }

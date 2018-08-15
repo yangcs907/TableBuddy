@@ -84,8 +84,7 @@ class Manager extends Component {
             />);
         return (
             <div>
-                {
-                    isAuthenticated() && (
+
                         <React.Fragment>
                             <h1 className="sr-only">Manage</h1>
                             <div className="container mt-5 mb-5">
@@ -115,22 +114,11 @@ class Manager extends Component {
                             </div>
                             </div>
                         </React.Fragment>
-                    )
-                }
-                {
-                    !isAuthenticated() && (
-                        <h4>
-                            You are not logged in! Please{' '}
-                            <a
-                                style={{ cursor: 'pointer' }}
-                                onClick={this.login.bind(this)}
-                            >
-                                Log In
-                            </a>
-                            {' '}to continue.
-                          </h4>
-                    )
-                }
+
+
+
+
+
             </div>
         );
     }
