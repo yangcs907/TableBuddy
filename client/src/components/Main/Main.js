@@ -126,7 +126,7 @@ class Main extends Component {
       {this.state.currentSelection ?
       <Foodcontainer {...this.state.currentSelection} addToOrder={this.addCurrentToOrder} /> :
       null }
-      <div className="totalArea">
+      <div className="totalContainer">
 
         <h2>Total: {total}</h2>
       <div className="submitButton">

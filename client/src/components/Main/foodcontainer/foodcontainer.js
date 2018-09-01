@@ -19,6 +19,7 @@ const Foodcontainer = props => (
 	</div>
 	</div>
 	</div>
+
 );
 
 export default Foodcontainer;

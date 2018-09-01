@@ -10,9 +10,19 @@ const navButton = {
   padding: "10px"
 }
 
+const navButtonActive = {
+  fontWeight: "bold",
+  textDecoration: "underline"
+}
+
+
 class App extends Component {
+  state = {
+    currentPage: "about"
+  };
+
   goTo(route) {
-    this.props.history.replace(`/${route}`)
+    this.props.history.replace(`/${route}`);
   }
 
   login() {
@@ -46,7 +56,7 @@ class App extends Component {
             >
               Manager
             </a>
-            
+
       </div>
     );
   }
