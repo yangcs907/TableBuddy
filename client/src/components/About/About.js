@@ -14,7 +14,7 @@ class App extends Component {
             and fulfill them
           </p>
           <div className="by">
-            <p>by <a href="https://chrisyangportfolio.herokuapp.com/">cy</a></p>
+            <p>by <a href="https://yangcs907.github.io/chrisyang907/index.html">cy</a></p>
           </div>
 
       </div>
